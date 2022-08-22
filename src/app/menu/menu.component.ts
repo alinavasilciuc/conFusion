@@ -12,6 +12,7 @@ export class MenuComponent implements OnInit {
   dishes: Dish[];
   selectedDish: Dish;
  
+  // INJECTING SERVICE INTO THE CONSTRUCTOR
   constructor(private DishService: DishService) { }
 
   ngOnInit() {
