@@ -9,7 +9,7 @@ import { LoginComponent } from '../login/login.component';
 })
 export class HeaderComponent implements OnInit {
 
-  //Inject the service MatDialog into the constructor. MatDialog enables us to open the component as a dialog component
+  //Inject the service MatDialog into the constructor. MatDialog will enable us to open the LoginComponent as a dialog component - like a pop up window - similar to Modals in Bootstrap4
   constructor(public dialog: MatDialog ) { }
 
   ngOnInit() {
