@@ -26,13 +26,13 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
     ////the handling of the call to getFeaturedDish() now receives a promise here
     //this.dish = this.dishservice.getFeaturedDish();
-    this.dishservice.getFeaturedDish().then((dish) => this.dish = dish);
+    this.dishservice.getFeaturedDish().subscribe((dish) => this.dish = dish);
 
     //this.promotion = this.promotionservice.getFeaturedPromotion();
-    this.promotionservice.getFeaturedPromotion().then( (promotion) => this.promotion = promotion);
+    this.promotionservice.getFeaturedPromotion().subscribe( (promotion) => this.promotion = promotion);
 
     //this.featured_leader = this.leaderservice.getFeaturedLeader();
-    this.leaderservice.getFeaturedLeader().then( (featured_leader) => this.featured_leader = featured_leader);
+    this.leaderservice.getFeaturedLeader().subscribe( (featured_leader) => this.featured_leader = featured_leader);
   }
 
 }
